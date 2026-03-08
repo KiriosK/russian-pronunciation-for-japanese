@@ -41,35 +41,85 @@
 <h2 class="purple">口蓋化の図解</h2>
 <div class="diagram-row">
 <div class="diagram-box">
-<svg width="220" height="200" viewBox="0 0 220 200">
-<rect width="220" height="200" fill="#f0f4f8" rx="8"/>
-<text x="110" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="#1a6fa0" font-family="Noto Sans JP,sans-serif">硬子音（例：Т）</text>
-<!-- 口蓋ライン -->
-<path d="M30,60 Q60,35 110,28 Q160,35 190,60" fill="none" stroke="#444" stroke-width="2"/>
-<!-- 舌（普通） -->
-<path d="M30,170 Q50,165 80,155 Q100,145 110,130 Q115,120 108,115 Q100,115 92,120 Q70,135 50,155 Q35,168 30,170Z" fill="#a0b8e0" stroke="#1a6fa0" stroke-width="2" opacity="0.8"/>
-<text x="130" y="85" font-size="10" fill="#1a6fa0" font-family="Noto Sans JP,sans-serif">舌の中央は</text>
-<text x="130" y="100" font-size="10" fill="#1a6fa0" font-family="Noto Sans JP,sans-serif">低いまま</text>
-<text x="55" y="110" font-size="9" fill="#777" font-family="Noto Sans JP,sans-serif">口蓋</text>
+<svg width="320" height="310" viewBox="0 0 320 310">
+<rect width="320" height="310" fill="#f0f4f8" rx="10"/>
+<text x="160" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#1a6fa0" font-family="Noto Sans JP,sans-serif">硬子音（例：Т [t]）</text>
+<!-- 頭部外形 -->
+<path d="M70,268 L70,240 Q68,215 70,195 L70,180 Q68,155 78,130 Q88,105 108,88 Q128,72 152,64 Q176,58 198,62 Q218,68 234,84 Q248,100 252,122 Q255,142 252,168" fill="none" stroke="#c5c0b8" stroke-width="1.5" stroke-dasharray="5,4"/>
+<path d="M70,180 Q75,170 82,162 Q92,152 102,148" fill="none" stroke="#aaa" stroke-width="1" stroke-dasharray="3,3"/>
+<!-- 唇 -->
+<path d="M68,195 Q62,198 58,206 Q56,214 60,220 Q64,224 70,224" fill="#f2d8d0" stroke="#c9a090" stroke-width="1.5"/>
+<path d="M70,238 Q64,238 60,234 Q56,230 56,222 Q58,216 62,212" fill="#f2d8d0" stroke="#c9a090" stroke-width="1.5"/>
+<!-- 歯 -->
+<rect x="70" y="200" width="14" height="18" rx="3" fill="#f5f0e6" stroke="#b0a898" stroke-width="1.2"/>
+<rect x="70" y="224" width="14" height="16" rx="3" fill="#f5f0e6" stroke="#b0a898" stroke-width="1.2"/>
+<!-- 歯茎 -->
+<path d="M84,200 Q90,192 98,184" fill="none" stroke="#777" stroke-width="2.2"/>
+<!-- 硬口蓋 -->
+<path d="M98,184 Q115,155 142,132 Q162,118 185,110 Q205,106 218,110" fill="none" stroke="#444" stroke-width="2.5"/>
+<!-- 軟口蓋 -->
+<path d="M218,110 Q232,116 242,130 Q248,142 250,158 Q250,168 247,175" fill="none" stroke="#444" stroke-width="2.5"/>
+<!-- 口蓋垂 -->
+<path d="M247,175 Q244,185 240,190 Q237,192 235,190" fill="none" stroke="#444" stroke-width="2"/>
+<!-- 咽頭壁 -->
+<path d="M250,158 Q254,190 254,225 Q254,255 250,275" fill="none" stroke="#c5c0b8" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+<!-- 舌（硬子音：舌先が歯茎に接触、中央は低い、通常のアピカル接触） -->
+<path d="M85,270 Q100,266 118,258 Q135,250 150,242 Q165,234 175,226 Q182,220 182,214 Q180,208 172,205 Q165,206 155,212 Q140,224 120,240 Q105,255 90,266 L85,270Z" fill="#a0b8e0" stroke="#1a6fa0" stroke-width="2.2" opacity="0.85"/>
+<!-- 舌先が歯茎に接触 -->
+<circle cx="94" cy="192" r="4" fill="#1a6fa0" opacity="0.5"/>
+<text x="100" y="188" font-size="9" fill="#1a6fa0" font-weight="700" font-family="Noto Sans JP,sans-serif">舌先接触</text>
+<!-- 舌の中央は低い -->
+<text x="155" y="220" font-size="9" fill="#1a6fa0" font-family="Noto Sans JP,sans-serif">中央は低い</text>
+
+<!-- ラベル -->
+<text x="86" y="182" font-size="9" fill="#777" font-family="Noto Sans JP,sans-serif">歯茎</text>
+<text x="130" y="122" font-size="9" fill="#777" font-family="Noto Sans JP,sans-serif">硬口蓋</text>
+<text x="222" y="105" font-size="9" fill="#777" font-family="Noto Sans JP,sans-serif">軟口蓋</text>
 </svg>
-<div class="diagram-label blue">硬子音（口蓋化なし）</div>
+<div class="diagram-label blue">硬子音（口蓋化なし）― 舌先のみ接触</div>
 </div>
 <div class="diagram-box">
-<svg width="220" height="200" viewBox="0 0 220 200">
-<rect width="220" height="200" fill="#f5eef8" rx="8"/>
-<text x="110" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="#6b4c9a" font-family="Noto Sans JP,sans-serif">軟子音（例：Т'）</text>
-<!-- 口蓋ライン -->
-<path d="M30,60 Q60,35 110,28 Q160,35 190,60" fill="none" stroke="#444" stroke-width="2"/>
-<!-- 舌（口蓋化：中央が上がる） -->
-<path d="M30,170 Q50,165 80,150 Q95,138 105,118 Q112,100 115,85 Q118,75 112,68 Q105,66 98,72 Q88,85 78,105 Q60,135 42,160 Q35,168 30,170Z" fill="#c8b0e0" stroke="#6b4c9a" stroke-width="2" opacity="0.8"/>
-<!-- 舌が口蓋に近づくことを示す矢印 -->
-<path d="M110,75 Q115,55 118,42" fill="none" stroke="#6b4c9a" stroke-width="2" marker-end="url(#aPurp)"/>
+<svg width="320" height="310" viewBox="0 0 320 310">
+<rect width="320" height="310" fill="#f5eef8" rx="10"/>
 <defs><marker id="aPurp" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto"><polygon points="0,0 7,2.5 0,5" fill="#6b4c9a"/></marker></defs>
-<text x="125" y="68" font-size="10" fill="#6b4c9a" font-weight="700" font-family="Noto Sans JP,sans-serif">舌の中央が</text>
-<text x="125" y="83" font-size="10" fill="#6b4c9a" font-weight="700" font-family="Noto Sans JP,sans-serif">口蓋に近づく</text>
-<text x="55" y="55" font-size="9" fill="#777" font-family="Noto Sans JP,sans-serif">口蓋</text>
+<text x="160" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#6b4c9a" font-family="Noto Sans JP,sans-serif">軟子音（例：Т' [tʲ]）</text>
+<!-- 頭部外形 -->
+<path d="M70,268 L70,240 Q68,215 70,195 L70,180 Q68,155 78,130 Q88,105 108,88 Q128,72 152,64 Q176,58 198,62 Q218,68 234,84 Q248,100 252,122 Q255,142 252,168" fill="none" stroke="#c5c0b8" stroke-width="1.5" stroke-dasharray="5,4"/>
+<path d="M70,180 Q75,170 82,162 Q92,152 102,148" fill="none" stroke="#aaa" stroke-width="1" stroke-dasharray="3,3"/>
+<!-- 唇 -->
+<path d="M68,195 Q62,198 58,206 Q56,214 60,220 Q64,224 70,224" fill="#f2d8d0" stroke="#c9a090" stroke-width="1.5"/>
+<path d="M70,238 Q64,238 60,234 Q56,230 56,222 Q58,216 62,212" fill="#f2d8d0" stroke="#c9a090" stroke-width="1.5"/>
+<!-- 歯 -->
+<rect x="70" y="200" width="14" height="18" rx="3" fill="#f5f0e6" stroke="#b0a898" stroke-width="1.2"/>
+<rect x="70" y="224" width="14" height="16" rx="3" fill="#f5f0e6" stroke="#b0a898" stroke-width="1.2"/>
+<!-- 歯茎 -->
+<path d="M84,200 Q90,192 98,184" fill="none" stroke="#777" stroke-width="2.2"/>
+<!-- 硬口蓋 -->
+<path d="M98,184 Q115,155 142,132 Q162,118 185,110 Q205,106 218,110" fill="none" stroke="#444" stroke-width="2.5"/>
+<!-- 軟口蓋 -->
+<path d="M218,110 Q232,116 242,130 Q248,142 250,158 Q250,168 247,175" fill="none" stroke="#444" stroke-width="2.5"/>
+<!-- 口蓋垂 -->
+<path d="M247,175 Q244,185 240,190 Q237,192 235,190" fill="none" stroke="#444" stroke-width="2"/>
+<!-- 咽頭壁 -->
+<path d="M250,158 Q254,190 254,225 Q254,255 250,275" fill="none" stroke="#c5c0b8" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+<!-- 舌（軟子音：ラミナル接触 + 舌体が硬口蓋に向かって持ち上がる） -->
+<path d="M85,270 Q100,264 118,252 Q135,238 148,222 Q158,208 164,195 Q168,184 166,175 Q162,168 155,165 Q148,164 140,168 Q128,178 118,195 Q108,215 98,238 Q90,258 85,270Z" fill="#c8b0e0" stroke="#6b4c9a" stroke-width="2.2" opacity="0.85"/>
+<!-- ラミナル接触（刃が歯茎に接触） -->
+<circle cx="92" cy="196" r="4" fill="#6b4c9a" opacity="0.5"/>
+<text x="98" y="192" font-size="9" fill="#6b4c9a" font-weight="700" font-family="Noto Sans JP,sans-serif">刃で接触</text>
+<!-- 舌体が硬口蓋に近づく矢印 -->
+<path d="M158,168 Q162,152 158,140" fill="none" stroke="#6b4c9a" stroke-width="2.2" marker-end="url(#aPurp)"/>
+<text x="164" y="148" font-size="10" fill="#6b4c9a" font-weight="700" font-family="Noto Sans JP,sans-serif">舌体が</text>
+<text x="164" y="162" font-size="10" fill="#6b4c9a" font-weight="700" font-family="Noto Sans JP,sans-serif">硬口蓋へ↑</text>
+
+<!-- ラベル -->
+<text x="86" y="182" font-size="9" fill="#777" font-family="Noto Sans JP,sans-serif">歯茎</text>
+<text x="130" y="122" font-size="9" fill="#777" font-family="Noto Sans JP,sans-serif">硬口蓋</text>
+<text x="222" y="105" font-size="9" fill="#777" font-family="Noto Sans JP,sans-serif">軟口蓋</text>
 </svg>
-<div class="diagram-label purple">軟子音（口蓋化あり）</div>
+<div class="diagram-label purple">軟子音（口蓋化あり）― 舌体が硬口蓋に近づく</div>
 </div>
 </div>
 </div>

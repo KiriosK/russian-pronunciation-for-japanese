@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Shippori+Mincho:wght@400;600;700;800&display=swap');
+/* Noto Serif first: Cyrillic + combining acute render correctly.
+   Japanese glyphs absent in Noto Serif fall through to Noto Sans JP. */
 :root {
   --bg: #f7f3ec; --bg-warm: #f0ebe1; --card: #ffffff;
   --accent-red: #b83230; --accent-blue: #1a6fa0; --accent-green: #2a7d4f;
@@ -9,7 +11,7 @@
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
-body { font-family:'Noto Sans JP',sans-serif; background:var(--bg); color:var(--text); line-height:2; font-size:16px; min-height:100vh; }
+body { font-family:'Noto Serif','Noto Sans JP',sans-serif; background:var(--bg); color:var(--text); line-height:2; font-size:16px; min-height:100vh; }
 .site-nav { background:var(--nav-bg); position:sticky; top:0; z-index:100; box-shadow:0 2px 12px rgba(0,0,0,0.2); }
 .nav-inner { max-width:960px; margin:0 auto; display:flex; align-items:center; overflow-x:auto; -webkit-overflow-scrolling:touch; }
 .nav-inner::-webkit-scrollbar { height:0; }
